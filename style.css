@@ -1,7 +1,61 @@
+*{
+    font-family: 'DynaPuff', cursive;
+}
+body{
+    background-color: #212529 !important;
+}
+header, main {
+    width: 90vw;
+    margin: auto;
+  
+}
 .nav-item {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.carousel-item #img1{
+    display: block !important;;
+}
+.carousel-item #img2{
+    display: none !important;;
+}
+.carousel-item img{
+    opacity: .5;
+    position: relative;
+    /* position: relative;
+  text-align: center;
+  color: white; */
+}
+.carousel-item h1{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    text-align: center;
+    width:400px;
+    color: aliceblue;
+    font-family: sans-serif;
+    transform: translate(-50%, -50%);
+}
+.carousel-item span{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    text-align: center;
+    width:400px;
+    color: aliceblue;
+    font-family: sans-serif;
+    transform: translate(-50%, -50%);
+}
+.carousel-item span::before, .carousel-item span::after{
+    background-color: aliceblue;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+    color: aliceblue;
 }
 @media screen and(min-width:678px) and (max-width: 1023px) {
   .nav-centered-data {
@@ -15,4 +69,9 @@
   .nav-social {
     display: none;
   }
+  .carousel-item #img1 {display: none !important;;}
+  .carousel-item #img2 {display: block !important;;}
+  .carousel-item h1 {font-size:inherit}
+  .carousel-item span {font-size:small}
+
 }
