@@ -1,0 +1,14 @@
+@media screen and(min-width:678px) and (max-width: 1023px) {
+  .nav-centered-data {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-centered-data {
+    display: none;
+  }
+  .nav-social{
+    display: none;
+
+  }
+}
