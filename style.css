@@ -1,3 +1,8 @@
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and(min-width:678px) and (max-width: 1023px) {
   .nav-centered-data {
     display: none;
@@ -7,8 +12,7 @@
   .nav-centered-data {
     display: none;
   }
-  .nav-social{
+  .nav-social {
     display: none;
-
   }
 }
