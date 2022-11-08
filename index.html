@@ -21,7 +21,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar bg-dark">
+      <nav class="navbar fixed-top bg-dark">
         <a class="navbar-brand nav-item" href="#">
           <img src="./assets/logo.svg" width="100" height="60" alt="logo" />
         </a>
@@ -52,17 +52,34 @@
             <span>. </span>
             <img src="./assets/facebook.svg" width="20" height="30" alt="" />
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            data-target="#myNavbar"
-            style="border: 0px"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-controls="basic-navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="border: 0px"
+              data-bs-target="#basic-navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="basic-navbar">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="#"
+                    >Home <span class="text-muted"></span
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#our-story"
+                    >Story <span class="text-muted"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -146,22 +163,22 @@
         </div>
       </div>
       <div class="about-us">
-        <div class="our-story">
+        <div class="our-story" id="our-story">
           <h1>Our Story</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. 
-            <br><br>
-            Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            aliquip ex ea commodo consequat.
+            <br /><br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
           </p>
         </div>
         <div class="office">
-            <img src="./assets/about_us_picture.png"/>
+          <img src="./assets/about_us_picture.png" />
         </div>
       </div>
     </main>
