@@ -57,6 +57,33 @@ header, main {
     width: 10%;
     color: aliceblue;
 }
+.about-us{
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    width: 100%;
+}
+.about-us img{
+    max-width: 42vw;
+}
+.our-story{
+    background-image:url('./assets/R_graphic_element.svg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding: inherit; */
+    align-self: flex-end;
+    padding: inherit;
+}
+.our-story h1{
+    color: #685940;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.our-story p{
+    color: aliceblue;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
 @media screen and(min-width:678px) and (max-width: 1023px) {
   .nav-centered-data {
     display: none;
@@ -73,5 +100,10 @@ header, main {
   .carousel-item #img2 {display: block !important;;}
   .carousel-item h1 {font-size:inherit}
   .carousel-item span {font-size:small}
-
+  .about-us{flex-direction: column-reverse;
+    padding: 3rem 0px;}
+  .about-us img {
+    max-width: 100%;
+}
+.our-story{padding: 5rem 0px;}
 }
